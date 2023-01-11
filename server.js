@@ -1,21 +1,14 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 require("console.table");
-const Connection = require('mysql2/typings/mysql/lib/Connection');
-const PORT = process.env.PORT || 3001;
-const app = express();
 
-// Express middleware
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
 
-// Connect to database
-const db = mysql.createConnection(
-  {host: 'localhost', port: 3001, user: 'root', password: '', database: 'employeeDatabase'},
+const connection = mysql.createConnection(
+  {host: 'localhost', port: 3002, user: 'root', password: 'Access1!', database: 'employeeDatabase'},
   console.log(`You have connected to the employeeDatabase database.`)
 );
 
-Connection.connect(function (err) {
+connection.connect(function (err) {
     if (err) throw (err);
     cli_prompt()
 });
@@ -430,13 +423,3 @@ function promptAddRole(departmentChoices) {
         });
 }
 
-
-
-
-
-
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-  
