@@ -6,7 +6,7 @@ INSERT INTO department (department_name)
 ("Management");
 ("Human resources");
 
-INSERT INTO employeeRole (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 ("Revenue Lead", 100000, 1);
 ("Front-end Engineer", 150000, 2);
 ("Back-end Engineer", 120000, 2);
