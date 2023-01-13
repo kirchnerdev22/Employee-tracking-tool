@@ -305,8 +305,8 @@ function promptAddNewRole(departmentChoices) {
 
             let query = "INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)";
 
-            connection.query(query, [answer.title, answer.salary,
-            answer.department_id], function (err, res) {
+            connection.query(query, [answer.role_title, answer.role_salary,
+            answer.department_dept_name], function (err, res) {
             if (err) throw err;
 
             console.table(res);
