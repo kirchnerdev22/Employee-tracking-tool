@@ -21,7 +21,7 @@ VALUES ("Sales Manager", 120000, 1),
 
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES git add --a("Samantha", "Smith", 1, null),
+VALUES ("Samantha", "Smith", 1, null),
 ("Michael", "Johnson", 2, 1),
 ("Joshua", "Williams", 2, 1),
 ("Ashley", "Brown", 3, null),
